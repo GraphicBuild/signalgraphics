@@ -102,7 +102,7 @@ export function ClientReviews({ client }: { client: ClientSite }) {
           </div>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {highlights.map((h, i) => (
             <Reveal key={h.author} delay={i * 0.06}>
               <div className="h-full rounded-2xl border border-[var(--line)] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_-16px_rgba(0,0,0,0.35)]">
@@ -111,7 +111,7 @@ export function ClientReviews({ client }: { client: ClientSite }) {
                     <Star key={s} filled={s < h.rating} />
                   ))}
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--ink)]/85">
+                <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--ink)_85%,transparent)]">
                   „{h.text}“
                 </p>
                 <p className="mt-4 text-sm font-semibold">{h.author}</p>

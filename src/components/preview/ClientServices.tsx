@@ -19,14 +19,14 @@ export function ClientServices({ client }: { client: ClientSite }) {
             </p>
           )}
         </Reveal>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {client.services.map((group, i) => (
             <Reveal key={group.category} delay={i * 0.05}>
               <div className="h-full rounded-2xl border border-[var(--line)] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_-16px_rgba(0,0,0,0.35)]">
                 <h3 className="font-client-display text-lg font-semibold">
                   {group.category}
                 </h3>
-                <ul className="mt-4 space-y-2 text-sm text-[var(--ink)]/80">
+                <ul className="mt-4 space-y-2 text-sm text-[color-mix(in_srgb,var(--ink)_80%,transparent)]">
                   {group.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}

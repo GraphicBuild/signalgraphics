@@ -17,7 +17,7 @@ export function ClientHero({ client }: { client: ClientSite }) {
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-5 max-w-xl text-lg leading-snug text-[var(--ink)]/80 md:text-xl">
+          <p className="mt-5 max-w-xl text-lg leading-snug text-[color-mix(in_srgb,var(--ink)_80%,transparent)] md:text-xl">
             {client.promise}
           </p>
         </Reveal>
@@ -33,7 +33,7 @@ export function ClientHero({ client }: { client: ClientSite }) {
             </a>
             <a
               href={clientTelUrl(client)}
-              className="inline-flex items-center rounded-full border border-[var(--ink)]/20 px-6 py-3.5 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--accent)]/60"
+              className="inline-flex items-center rounded-full border border-[color-mix(in_srgb,var(--ink)_20%,transparent)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] transition hover:border-[color-mix(in_srgb,var(--accent)_60%,transparent)]"
             >
               {client.nap.phoneDisplay}
             </a>

@@ -59,6 +59,8 @@ Beispiele:
 
 - **Haarmonie 11** (Friseursalon, Mannheim Jungbusch) unter
   `/vorschau/haarmonie-11/` — offene Punkte in `TODO-haarmonie-11.md`.
+- **Salon Loi** (Friseursalon, Mannheim Neckarstadt) unter
+  `/vorschau/salon-loi/` — offene Punkte in `TODO-salon-loi.md`.
 - **Das Haarstudio** (Friseursalon, Mannheim-Schwetzingerstadt) unter
   `/vorschau/haarstudio/` — Kern ist eine Terminanfrage direkt auf der
   Startseite (Formular + Sofort-Anruf) statt nur über den
