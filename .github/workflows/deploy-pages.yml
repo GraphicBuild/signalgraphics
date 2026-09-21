@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - claude/website-creation-workflow-oovs1c
   workflow_dispatch:
 
 permissions:

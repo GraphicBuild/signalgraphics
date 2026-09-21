@@ -102,7 +102,7 @@ export function ClientReviews({ client }: { client: ClientSite }) {
           </div>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {highlights.map((h, i) => (
             <Reveal key={h.author} delay={i * 0.06}>
               <div className="h-full rounded-2xl border border-[var(--line)] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_-16px_rgba(0,0,0,0.35)]">
