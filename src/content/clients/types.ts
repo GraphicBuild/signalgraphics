@@ -26,6 +26,12 @@ export type ClientGalleryTile = {
   label: string;
 };
 
+export type ClientReviewHighlight = {
+  author: string;
+  rating: number;
+  text: string;
+};
+
 export type ClientSite = {
   slug: string;
   name: string;
@@ -49,7 +55,9 @@ export type ClientSite = {
   /** false = nicht alle Zeiten bestätigt, UI zeigt Hinweis statt vollständige Tabelle */
   hoursConfirmed: boolean;
 
-  reviews: { count: number; source: string };
+  reviews: { count: number; rating: number; source: string };
+  /** Echte Bewertungs-Zitate zum Anzeigen; leer = UI zeigt "Bewertung folgt"-Platzhalter */
+  reviewHighlights: ClientReviewHighlight[];
 
   services: ClientServiceGroup[];
   /** false = Leistungen sind Entwurfs-Annahmen, UI zeigt Kennzeichnung */
