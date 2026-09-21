@@ -41,7 +41,8 @@ export function ClientHero({ client }: { client: ClientSite }) {
         </Reveal>
         <Reveal delay={0.2}>
           <p className="mt-7 text-sm text-[var(--mute)]">
-            {client.reviews.count.toLocaleString("de-DE")}+ Bewertungen bei{" "}
+            {client.reviews.value && `${client.reviews.value} · `}
+            {client.reviews.count.toLocaleString("de-DE")} Bewertungen bei{" "}
             {client.reviews.source} · {client.nap.zipCity}
           </p>
         </Reveal>

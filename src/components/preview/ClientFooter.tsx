@@ -10,6 +10,16 @@ export function ClientFooter({ client }: { client: ClientSite }) {
           {client.nap.phoneDisplay}
         </a>
       </p>
+      {client.legal && (
+        <p className="mt-2 space-x-3">
+          <a href={client.legal.impressumHref} className="hover:underline">
+            Impressum
+          </a>
+          <a href={client.legal.datenschutzHref} className="hover:underline">
+            Datenschutz
+          </a>
+        </p>
+      )}
       <p className="mt-2">
         Unverbindliche Vorschau, erstellt von{" "}
         <a href="https://signalgraphics.de" className="hover:underline">

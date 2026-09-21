@@ -49,7 +49,8 @@ export type ClientSite = {
   /** false = nicht alle Zeiten bestätigt, UI zeigt Hinweis statt vollständige Tabelle */
   hoursConfirmed: boolean;
 
-  reviews: { count: number; source: string };
+  /** value = Sternedurchschnitt (z. B. "5,0"), falls vom Kunden bekannt — sonst weglassen */
+  reviews: { count: number; source: string; value?: string };
 
   services: ClientServiceGroup[];
   /** false = Leistungen sind Entwurfs-Annahmen, UI zeigt Kennzeichnung */
@@ -59,4 +60,14 @@ export type ClientSite = {
   gallery: ClientGalleryTile[];
 
   whatsappDefaultText: string;
+
+  /**
+   * Optional: Adresse für die Terminanfrage-Sektion (ClientBooking). Nur
+   * setzen, wenn dieser Kunde ein Anfrageformular auf der Startseite haben
+   * soll — Komponente wird pro Kunde in page.tsx bewusst eingebunden.
+   */
+  bookingEmail?: string;
+
+  /** Optional: Links zu Impressum/Datenschutz dieser Vorschau, falls vorhanden. */
+  legal?: { impressumHref: string; datenschutzHref: string };
 };
