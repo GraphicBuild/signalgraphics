@@ -2,11 +2,19 @@ import type { ClientSite } from "./types";
 
 /**
  * Salon Loi — Friseursalon, Mannheim Neckarstadt.
- * Quelle: öffentlicher Google-Maps-Eintrag (Name, Adresse, Telefon,
- * Bewertungsanzahl, Status "Opens 9 am Tue") sowie Branchenverzeichnisse
- * (Öffnungszeiten). Die bestehende Website des Salons war in dieser
- * Umgebung nicht erreichbar (Domain blockiert) — Leistungen, Über-uns-Text
- * und Galerie sind Entwurfs-Annahmen. Details siehe TODO-salon-loi.md.
+ * Quelle: öffentlicher Google-Maps-Eintrag (Name, Adresse, Telefon, Status
+ * "Opens 9 am Tue") sowie Branchenverzeichnisse (Öffnungszeiten). Die
+ * bestehende Website des Salons war in dieser Umgebung nicht erreichbar
+ * (Domain blockiert) — Leistungen, Über-uns-Text und Galerie sind
+ * Entwurfs-Annahmen. Details siehe TODO-salon-loi.md.
+ *
+ * Bewertungszahl: der ursprünglich vom Maps-Ausschnitt übernommene Wert
+ * "4.882 Bewertungen" ist mit hoher Wahrscheinlichkeit ein Lesefehler aus
+ * "4,8 ★ · 82 Bewertungen" (Rating und Anzahl zusammengezogen) — bei
+ * Haarmonie 11 wurde ein baugleicher Fehler (4.954 statt echter 54
+ * Bewertungen) vom Kunden bestätigt korrigiert. Hier bewusst auf den durch
+ * Branchenverzeichnisse gestützten Wert (82 Bewertungen, 4,8 ★) korrigiert,
+ * bis der Salon selbst die echte Zahl bestätigt.
  */
 export const salonLoi: ClientSite = {
   slug: "salon-loi",
@@ -47,7 +55,9 @@ export const salonLoi: ClientSite = {
   ],
   hoursConfirmed: false,
 
-  reviews: { count: 4882, source: "Google" },
+  reviews: { count: 82, rating: 4.8, source: "Google" },
+  // Echte Zitate folgen, sobald der Salon sie schickt — siehe TODO-salon-loi.md.
+  reviewHighlights: [],
 
   services: [
     {
@@ -71,7 +81,7 @@ export const salonLoi: ClientSite = {
 
   about: [
     "Salon Loi steht seit Jahren an der Max-Joseph-Straße in der Neckarstadt — kein Konzept von außen, sondern ein Salon, der zum Kiez gehört.",
-    "Fast 5.000 Bewertungen bei Google sind kein Zufall: Wer einmal kommt, kommt wieder.",
+    "4,8 Sterne bei Google sind kein Zufall: Wer einmal kommt, kommt wieder.",
     "Hier wird nicht verkauft, sondern zugehört — und danach geschnitten, gefärbt oder gestylt.",
     "Ohne Umwege erreichbar: anrufen, Termin ausmachen, vorbeikommen.",
   ],
