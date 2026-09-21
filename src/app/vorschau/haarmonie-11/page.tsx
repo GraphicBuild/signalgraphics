@@ -1,5 +1,6 @@
 import { haarmonie11 } from "@/content/clients/haarmonie-11";
 import { ClientHero } from "@/components/preview/ClientHero";
+import { ClientReviews } from "@/components/preview/ClientReviews";
 import { ClientServices } from "@/components/preview/ClientServices";
 import { ClientAbout } from "@/components/preview/ClientAbout";
 import { ClientGallery } from "@/components/preview/ClientGallery";
@@ -18,6 +19,11 @@ const jsonLd = {
     addressCountry: "DE",
   },
   telephone: haarmonie11.nap.phoneTel,
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: haarmonie11.reviews.rating,
+    reviewCount: haarmonie11.reviews.count,
+  },
 };
 
 export default function Haarmonie11Page() {
@@ -28,6 +34,7 @@ export default function Haarmonie11Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ClientHero client={haarmonie11} />
+      <ClientReviews client={haarmonie11} />
       <ClientServices client={haarmonie11} />
       <ClientAbout client={haarmonie11} />
       <ClientGallery client={haarmonie11} />

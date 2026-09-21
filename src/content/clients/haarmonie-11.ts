@@ -39,7 +39,9 @@ export const haarmonie11: ClientSite = {
   hours: [{ day: "Dienstag", hours: "ab 10:00 Uhr" }],
   hoursConfirmed: false,
 
-  reviews: { count: 4954, source: "Google" },
+  reviews: { count: 54, rating: 4.9, source: "Google" },
+  // Echte Zitate folgen, sobald der Kunde sie schickt — siehe TODO-haarmonie-11.md.
+  reviewHighlights: [],
 
   services: [
     {
