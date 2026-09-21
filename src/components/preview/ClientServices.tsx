@@ -22,7 +22,7 @@ export function ClientServices({ client }: { client: ClientSite }) {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {client.services.map((group, i) => (
             <Reveal key={group.category} delay={i * 0.05}>
-              <div className="h-full rounded-2xl border border-[var(--line)] p-6">
+              <div className="h-full rounded-2xl border border-[var(--line)] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_-16px_rgba(0,0,0,0.35)]">
                 <h3 className="font-client-display text-lg font-semibold">
                   {group.category}
                 </h3>
