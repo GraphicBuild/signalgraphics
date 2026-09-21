@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -24,15 +20,8 @@ html {
 }
 
 body {
-  background: #0b0b0b;
-  color: #f4f1ea;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-::selection {
-  background: #c8f542;
-  color: #0b0b0b;
 }
 
 .reveal {
