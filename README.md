@@ -35,6 +35,16 @@ Alle Agenturdaten (Texte, Preise, Kontakt, Showcase) liegen in:
 src/site.config.ts
 ```
 
+## Kunden-Vorschauen
+
+Vorschauen für einzelne Betriebe liegen unter `src/app/vorschau/[kunde]/`,
+getrennt vom Agentur-Design (eigenes Layout, eigene Fonts/Farben, kein
+Signal-Graphics-Header/Footer). Alle Inhalte eines Kunden stehen in einer
+`[kunde].config.ts` im selben Ordner. Beispiel: `vorschau/salon-loi`.
+
+Für eine neue Vorschau: Ordner kopieren, `[kunde].config.ts` mit den echten
+Daten befüllen, unklare Fakten in `TODO.md` festhalten.
+
 ## Preis-Annahmen (nicht verbindlich)
 
 Die Zahlen auf der Seite sind **Entwurfs-Annahmen** für DACH-Lokalgeschäft — kein Angebot:
