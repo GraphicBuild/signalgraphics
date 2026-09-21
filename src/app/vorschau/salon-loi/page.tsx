@@ -1,21 +1,38 @@
-import { DraftBanner } from "./_components/DraftBanner";
-import { Hero } from "./_components/Hero";
-import { Services } from "./_components/Services";
-import { About } from "./_components/About";
-import { Visit } from "./_components/Visit";
-import { StickyBar } from "./_components/StickyBar";
-import { PreviewFooter } from "./_components/PreviewFooter";
+import { salonLoi } from "@/content/clients/salon-loi";
+import { ClientHero } from "@/components/preview/ClientHero";
+import { ClientServices } from "@/components/preview/ClientServices";
+import { ClientAbout } from "@/components/preview/ClientAbout";
+import { ClientGallery } from "@/components/preview/ClientGallery";
+import { ClientHours } from "@/components/preview/ClientHours";
+import { ClientContact } from "@/components/preview/ClientContact";
 
-export default function SalonLoiPreviewPage() {
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  name: salonLoi.name,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: salonLoi.nap.street,
+    addressLocality: "Mannheim",
+    postalCode: "68167",
+    addressCountry: "DE",
+  },
+  telephone: salonLoi.nap.phoneTel,
+};
+
+export default function SalonLoiPage() {
   return (
     <>
-      <DraftBanner />
-      <Hero />
-      <Services />
-      <About />
-      <Visit />
-      <PreviewFooter />
-      <StickyBar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ClientHero client={salonLoi} />
+      <ClientServices client={salonLoi} />
+      <ClientAbout client={salonLoi} />
+      <ClientGallery client={salonLoi} />
+      <ClientHours client={salonLoi} />
+      <ClientContact client={salonLoi} />
     </>
   );
 }

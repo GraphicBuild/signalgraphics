@@ -55,8 +55,11 @@ Jede Vorschau zeigt oben automatisch das Banner „Unverbindlicher Entwurf —
 nicht öffentlich, kein Auftrag." und ist per `robots: noindex` von der
 Suche ausgeschlossen, bis der Kunde zusagt.
 
-Beispiel: **Haarmonie 11** (Friseursalon, Mannheim Jungbusch) unter
-`/vorschau/haarmonie-11/` — offene Punkte dazu in `TODO-haarmonie-11.md`.
+Beispiele:
+- **Haarmonie 11** (Friseursalon, Mannheim Jungbusch) unter
+  `/vorschau/haarmonie-11/` — offene Punkte in `TODO-haarmonie-11.md`.
+- **Salon Loi** (Friseursalon, Mannheim Neckarstadt) unter
+  `/vorschau/salon-loi/` — offene Punkte in `TODO-salon-loi.md`.
 
 ## Preis-Annahmen (nicht verbindlich)
 
