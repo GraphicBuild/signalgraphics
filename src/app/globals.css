@@ -58,3 +58,9 @@ body {
     padding-bottom: 0;
   }
 }
+
+/* Das Haarstudio preview — warm palette instead of the agency's neon/dark selection */
+.haarstudio-theme ::selection {
+  background: #a34b2a;
+  color: #fbf6ef;
+}

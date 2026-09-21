@@ -67,4 +67,14 @@ export type ClientSite = {
   gallery: ClientGalleryTile[];
 
   whatsappDefaultText: string;
+
+  /**
+   * Optional: Adresse für die Terminanfrage-Sektion (ClientBooking). Nur
+   * setzen, wenn dieser Kunde ein Anfrageformular auf der Startseite haben
+   * soll — Komponente wird pro Kunde in page.tsx bewusst eingebunden.
+   */
+  bookingEmail?: string;
+
+  /** Optional: Links zu Impressum/Datenschutz dieser Vorschau, falls vorhanden. */
+  legal?: { impressumHref: string; datenschutzHref: string };
 };
