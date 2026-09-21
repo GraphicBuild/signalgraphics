@@ -26,7 +26,7 @@ export function ClientServices({ client }: { client: ClientSite }) {
                 <h3 className="font-client-display text-lg font-semibold">
                   {group.category}
                 </h3>
-                <ul className="mt-4 space-y-2 text-sm text-[var(--ink)]/80">
+                <ul className="mt-4 space-y-2 text-sm text-[color-mix(in_srgb,var(--ink)_80%,transparent)]">
                   {group.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}

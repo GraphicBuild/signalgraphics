@@ -11,7 +11,7 @@ export function ClientContact({ client }: { client: ClientSite }) {
             <h2 className="font-client-display text-3xl font-semibold tracking-tight md:text-4xl">
               Termin anfragen.
             </h2>
-            <p className="mx-auto mt-3 max-w-md text-[var(--bg)]/75">
+            <p className="mx-auto mt-3 max-w-md text-[color-mix(in_srgb,var(--bg)_75%,transparent)]">
               Kurz schreiben oder anrufen — {client.name} meldet sich zeitnah
               zurück.
             </p>
@@ -26,7 +26,7 @@ export function ClientContact({ client }: { client: ClientSite }) {
               </a>
               <a
                 href={clientTelUrl(client)}
-                className="inline-flex items-center rounded-full border border-[var(--bg)]/25 px-6 py-3.5 text-sm font-semibold text-[var(--bg)] transition hover:border-[var(--accent)]"
+                className="inline-flex items-center rounded-full border border-[color-mix(in_srgb,var(--bg)_25%,transparent)] px-6 py-3.5 text-sm font-semibold text-[var(--bg)] transition hover:border-[var(--accent)]"
               >
                 {client.nap.phoneDisplay}
               </a>

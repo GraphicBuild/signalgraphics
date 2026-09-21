@@ -27,7 +27,7 @@ export function ClientGallery({ client }: { client: ClientSite }) {
                     "linear-gradient(155deg, var(--accent-soft), var(--accent))",
                 }}
               >
-                <span className="rounded-full bg-[var(--bg)]/85 px-3 py-1 text-xs font-semibold text-[var(--ink)]">
+                <span className="rounded-full bg-[color-mix(in_srgb,var(--bg)_85%,transparent)] px-3 py-1 text-xs font-semibold text-[var(--ink)]">
                   {tile.label}
                 </span>
               </div>

@@ -15,7 +15,7 @@ export function ClientAbout({ client }: { client: ClientSite }) {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="space-y-4 text-base leading-relaxed text-[var(--ink)]/85 md:text-lg">
+            <div className="space-y-4 text-base leading-relaxed text-[color-mix(in_srgb,var(--ink)_85%,transparent)] md:text-lg">
               {client.about.map((line) => (
                 <p key={line}>{line}</p>
               ))}
