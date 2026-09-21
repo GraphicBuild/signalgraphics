@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import { site } from "@/site.config";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { StickyCta } from "@/components/StickyCta";
 import "./globals.css";
 
 const display = Syne({
@@ -50,12 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${display.variable} ${body.variable}`}>
-      <body className="font-sans sticky-cta-pad antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <StickyCta />
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }

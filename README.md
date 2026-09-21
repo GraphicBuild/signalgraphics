@@ -51,6 +51,18 @@ Finales Angebot immer nach kurzem Gespräch. Disclaimer steht auch auf der Seite
 
 Die Cases unter „Arbeit“ sind **Entwurf / Showcase** (Capability-Demos), keine echten Kundenmarken: Bäckerei, Physio, Handwerk, Gastro.
 
+## Kunden-Vorschauen
+
+Echte Tür-zu-Tür-Vorschauen für Betriebe liegen unter `src/app/preview/<slug>/`,
+mit eigenem Layout (eigene Farben/Fonts, kein Agentur-Header) und eigener
+Inhalts-Datei in `src/content/<slug>.config.ts`. Aktuell:
+
+- **Das Haarstudio** (Friseursalon, Mannheim-Schwetzingerstadt) — `/preview/haarstudio/`
+  Inhalte: `src/content/haarstudio.config.ts`. Kern der Vorschau: Terminanfrage
+  direkt auf der Startseite (Formular + Sofort-Anruf), statt nur über den
+  Google-Treatwell-Umweg wie auf der aktuellen Seite. Offene Punkte (Öffnungszeiten,
+  Buchungssystem-Entscheidung, echte Fotos) stehen in [`TODO.md`](./TODO.md).
+
 ## Deploy
 
 ### Option A — GitHub Pages (bevorzugt, static export)
