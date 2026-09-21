@@ -18,6 +18,8 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-display)", "system-ui", "sans-serif"],
         sans: ["var(--font-body)", "system-ui", "sans-serif"],
+        "client-display": ["var(--font-client-display)", "Georgia", "serif"],
+        "client-body": ["var(--font-client-body)", "system-ui", "sans-serif"],
       },
       letterSpacing: {
         tightest: "-0.04em",

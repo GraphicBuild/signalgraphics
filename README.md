@@ -35,6 +35,29 @@ Alle Agenturdaten (Texte, Preise, Kontakt, Showcase) liegen in:
 src/site.config.ts
 ```
 
+## Kunden-Vorschauen (Product B)
+
+Vorschauen für potenzielle Kunden liegen unter `/vorschau/[slug]/` und haben ein
+eigenes Design, eigene Fonts und eigene Farben — komplett getrennt vom
+Agentur-Layout (`src/app/(site)/`).
+
+Neuen Kunden anlegen:
+
+1. Neue Datei `src/content/clients/<slug>.ts` nach dem Typ in
+   `src/content/clients/types.ts` (Name, Adresse, Telefon, Öffnungszeiten,
+   Farben/Theme, Leistungen, Über-uns-Text, Galerie-Labels).
+2. Neuer Ordner `src/app/vorschau/<slug>/` mit `layout.tsx` (eigene
+   Google Fonts + Theme-Farben als CSS-Variablen) und `page.tsx` (setzt die
+   vorhandenen Komponenten aus `src/components/preview/` zusammen).
+3. Komponenten bleiben unverändert — nur Config und die zwei neuen Routen-Dateien.
+
+Jede Vorschau zeigt oben automatisch das Banner „Unverbindlicher Entwurf —
+nicht öffentlich, kein Auftrag." und ist per `robots: noindex` von der
+Suche ausgeschlossen, bis der Kunde zusagt.
+
+Beispiel: **Haarmonie 11** (Friseursalon, Mannheim Jungbusch) unter
+`/vorschau/haarmonie-11/` — offene Punkte dazu in `TODO-haarmonie-11.md`.
+
 ## Preis-Annahmen (nicht verbindlich)
 
 Die Zahlen auf der Seite sind **Entwurfs-Annahmen** für DACH-Lokalgeschäft — kein Angebot:
