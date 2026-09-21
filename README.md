@@ -78,10 +78,9 @@ Die Cases unter „Arbeit“ sind **Entwurf / Showcase** (Capability-Demos), kei
 
 ### Option A — GitHub Pages (bevorzugt, static export)
 
-1. `GH_PAGES=true npm run build` erzeugt `out/` mit `basePath` `/signalgraphics`.
-2. Branch `gh-pages` mit Inhalt von `out/` deployen (Workflow enthalten).
-3. Repo → Settings → Pages → Source: `gh-pages` branch.
-4. Live: `https://graphicbuild.github.io/signalgraphics/`
+1. Einmalig: Repo → Settings → Pages → **Build and deployment → Source: „GitHub Actions"** einstellen (kein CLI/Token nötig, nur dieser eine Klick).
+2. Danach deployt `.github/workflows/deploy-pages.yml` automatisch bei jedem Push auf `main` (oder manuell über Actions → „Deploy to GitHub Pages" → „Run workflow").
+3. Live: `https://graphicbuild.github.io/signalgraphics/` — Unterseiten z. B. `https://graphicbuild.github.io/signalgraphics/vorschau/haarmonie-11/`.
 
 ### Option B — Vercel
 
