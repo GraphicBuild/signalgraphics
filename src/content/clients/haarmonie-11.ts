@@ -40,34 +40,52 @@ export const haarmonie11: ClientSite = {
   hoursConfirmed: false,
 
   reviews: { count: 54, rating: 4.9, source: "Google" },
-  // Echte Zitate folgen, sobald der Kunde sie schickt — siehe TODO-haarmonie-11.md.
-  reviewHighlights: [],
-
-  services: [
+  // Echte Google-Bewertungen, vom Nutzer per Screenshot geschickt.
+  reviewHighlights: [
     {
-      category: "Damen",
-      items: ["Schnitt & Styling", "Föhnfrisur", "Hochsteckfrisur"],
+      author: "Betty",
+      rating: 5,
+      text: "Ich bin seit der Eröffnung Kundin und kann nur sagen alles Top. Immer gut beraten und für mich nix besseres. Da nehme ich gerne alle 8 Wochen die Fahrt von PF nach MA in Kauf.",
     },
     {
-      category: "Herren",
-      items: ["Herrenschnitt", "Bartpflege", "Fade & Konturen"],
+      author: "Beate Beulig",
+      rating: 5,
+      text: "Sehr zu empfehlen! Ein Friseur aus Leidenschaft! Alex schneidet nicht nur die Haare, sondern geht auf jeden sehr persönlich ein und du fühlst dich einfach super! Definitiv mein Friseur!",
+    },
+    {
+      author: "Ines Ostkamp",
+      rating: 5,
+      text: "Wundervoller Friseursalon. Man entspannt in toller Atmosphäre. Nach einer Massage wird man durch den kompetenten Inhaber beraten und verwöhnt. Dort versteht man das Handwerk Friseur.",
+    },
+    {
+      author: "Victoria Rabe",
+      rating: 5,
+      text: "Du möchtest endlich deinen Typ/Style finden und keine wandelnde Kopie mehr sein? Bei Alex bist du genau richtig, bin schon seit Jahren sehr zufrieden. Preis/Leistung einfach TOP. Danke Alex!",
+    },
+  ],
+
+  // Leistungsnamen aus dem Google-Profil (Rezensions-Tag), keine Erfindung mehr.
+  services: [
+    {
+      category: "Schnitt & Styling",
+      items: ["Haarstyling", "Pony schneiden", "Haareföhnen", "Lockenfrisuren"],
     },
     {
       category: "Farbe & Textur",
-      items: ["Coloration", "Strähnen & Balayage", "Tönung"],
+      items: ["Haarefärben", "Haar-Highlights", "Hair Gloss / Hair Glaze", "Haarglättung"],
     },
     {
-      category: "Pflege & Anlässe",
-      items: ["Kur & Aufbaupflege", "Braut- & Event-Styling"],
+      category: "Pflege",
+      items: ["Keratinbehandlungen", "Feuchtigkeitsbehandlung der Haare"],
     },
   ],
-  servicesConfirmed: false,
+  servicesConfirmed: true,
 
   about: [
     "Haarmonie 11 sitzt mitten im Jungbusch — dort, wo Mannheim gerade am meisten in Bewegung ist.",
-    "Schnitt, Farbe und Pflege aus einer Hand, mit einem Team, das genau hinschaut, bevor es schneidet.",
-    "Beratung zuerst, dann der Schnitt, der zum Kopf und zum Alltag passt — kein Fließband-Termin.",
-    "Vom klassischen Herrenschnitt bis zur aufwendigen Coloration: ein Salon für den ganzen Kiez.",
+    "Hinter dem Stuhl steht Alex: Frisör aus Leidenschaft, der zuhört, bevor er schneidet.",
+    "Manche Kundinnen fahren seit der Eröffnung von außerhalb an, alle paar Wochen, weil es hier passt.",
+    "Beratung, Schnitt, Farbe und Pflege aus einer Hand — kein Fließband-Termin, sondern ein Typ, der zu dir passt.",
   ],
 
   gallery: [
