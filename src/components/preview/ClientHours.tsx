@@ -14,7 +14,7 @@ export function ClientHours({ client }: { client: ClientSite }) {
             <h2 className="mt-3 font-client-display text-3xl font-semibold tracking-tight md:text-4xl">
               Vorbeikommen.
             </h2>
-            <ul className="mt-6 space-y-2 text-base text-[var(--ink)]/85">
+            <ul className="mt-6 space-y-2 text-base text-[color-mix(in_srgb,var(--ink)_85%,transparent)]">
               {client.hours.map((h) => (
                 <li
                   key={h.day}
@@ -45,7 +45,7 @@ export function ClientHours({ client }: { client: ClientSite }) {
               href={clientMapsUrl(client)}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex items-center rounded-full border border-[var(--ink)]/20 px-5 py-2.5 text-sm font-semibold transition hover:border-[var(--accent)]/60"
+              className="mt-5 inline-flex items-center rounded-full border border-[color-mix(in_srgb,var(--ink)_20%,transparent)] px-5 py-2.5 text-sm font-semibold transition hover:border-[color-mix(in_srgb,var(--accent)_60%,transparent)]"
             >
               Route planen →
             </a>

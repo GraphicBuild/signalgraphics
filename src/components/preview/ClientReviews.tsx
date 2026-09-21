@@ -111,7 +111,7 @@ export function ClientReviews({ client }: { client: ClientSite }) {
                     <Star key={s} filled={s < h.rating} />
                   ))}
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--ink)]/85">
+                <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--ink)_85%,transparent)]">
                   „{h.text}“
                 </p>
                 <p className="mt-4 text-sm font-semibold">{h.author}</p>
