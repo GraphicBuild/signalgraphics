@@ -20,6 +20,11 @@ const jsonLd = {
     addressCountry: "DE",
   },
   telephone: haarstudio.nap.phoneTel,
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: haarstudio.reviews.rating,
+    reviewCount: haarstudio.reviews.count,
+  },
 };
 
 export default function HaarstudioPage() {

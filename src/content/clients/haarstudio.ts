@@ -48,7 +48,9 @@ export const haarstudio: ClientSite = {
   ],
   hoursConfirmed: false,
 
-  reviews: { count: 85, source: "Google", value: "5,0" },
+  reviews: { count: 85, rating: 5.0, source: "Google" },
+  // Echte Zitate folgen, sobald die Kundin sie schickt — siehe TODO-haarstudio.md.
+  reviewHighlights: [],
 
   services: [
     {

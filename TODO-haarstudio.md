@@ -10,6 +10,11 @@ Entwurf unter `/vorschau/haarstudio/`. Diese Punkte vor dem Kundengespräch bzw.
   - echte E-Mail-Adresse bzw. Formular-Endpoint (z. B. Formspree/Getform) hinterlegen.
 - [ ] **WhatsApp-Nummer**: Aktuell = Festnetznummer aus dem Google-Profil (0621 443739). Bitte bestätigen, dass diese Nummer WhatsApp-fähig ist — sonst separate Mobilnummer in `src/content/clients/haarstudio.ts` (`nap.whatsapp`) eintragen. Solange das nicht bestätigt ist, ist der Sofort-Anruf-Button in `ClientBooking`/`ClientHero` der verlässlichere Weg.
 - [ ] **Bewertung**: 5,0 · 85 Bewertungen wie vom Nutzer übermittelt (Google-Profil) — bei Gelegenheit gegen den aktuellen Stand prüfen.
+- [ ] **Bewertungs-Zitate**: Die Bewertungen-Sektion zeigt aktuell nur Sterne + Zahl, plus Platzhalter-Karten ("Bewertung folgt"). Für echte Zitate bitte schicken (3–6 reichen):
+      - Bewertungstext (Original oder gekürzt)
+      - Sterne-Zahl der einzelnen Bewertung
+      - Name des Kunden, wie er bei Google steht (oder nur Vorname/Kürzel, falls Datenschutz-Bedenken)
+      - Copy-paste aus Google reicht, ein Screenshot der Bewertungen geht auch.
 - [ ] **Fotos**: Galerie nutzt Farbflächen-Platzhalter statt echter Fotos. Vier bis sechs gute Fotos (Innenraum, Farbarbeiten, Styling, Vorher/Nachher) würden die Vorschau deutlich stärker machen.
 - [ ] **Über-uns-Text**: Vier Zeilen sind Entwurf, nicht mit dem Salon abgestimmt — vor Versand persönlicher machen (Team-Namen, Spezialisierung, Gründungsjahr o. Ä.).
 - [ ] **Impressum**: Inhaber:in und USt-ID fehlen noch (`src/app/vorschau/haarstudio/impressum/page.tsx`), Adresse & Telefon sind bereits korrekt.

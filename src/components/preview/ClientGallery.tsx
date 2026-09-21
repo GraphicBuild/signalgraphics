@@ -21,7 +21,7 @@ export function ClientGallery({ client }: { client: ClientSite }) {
           {client.gallery.map((tile, i) => (
             <Reveal key={tile.label} delay={i * 0.04}>
               <div
-                className="flex aspect-[4/5] items-end rounded-2xl p-4"
+                className="flex aspect-[4/5] items-end rounded-2xl p-4 transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_-16px_rgba(0,0,0,0.35)]"
                 style={{
                   background:
                     "linear-gradient(155deg, var(--accent-soft), var(--accent))",
